@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilson Waruri Okari</title>
+
+    <style>
+        ol {
+            list-style-type: none;
+            counter-reset: elementcounter;
+            padding-left: 0;
+        }
+
+        li::before{
+            content: "Question " counter(elementcounter);
+            counter-increment: elementcounter;
+            font-weight: bold;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>You need to conduct a research and answer the questions accordingly in the page content.</p>
+
+    <ol>
+        <div>
+            <li> Using an example, describe what is a web domain.</li>
+            <textarea cols="60" rows="6" disabled> 
+                A web domain e.g google.com is the name of a wesite,the address where Internet users can access a website. A domain name is used for finding and identifying computers on the Internet.
+            </textarea>
+        </div>
+
+        <br>
+
+        <div>  
+            <li> Find two web hosting companies and write down the key features : bandwith, email, server, disk space... and prices for basic plan for each one.</li>
+
+            <table> 
+                <tr>
+                    <td>Host Name</td>
+                    <td>BandWith</td>
+                    <td>Email</td>
+                    <td>Server</td>
+                    <td>Disk Space</td>
+                    <td>Price</td>
+                </tr>
+
+                <tr>
+                    <td>Blue Host</td>
+                    <td>Unmetered</td>
+                    <td>NONE</td>
+                    <td>Ubuntu</td>
+                    <td>50GB</td>
+                    <td>$2.95/month</td>
+                </tr>
+
+                <tr>
+                    <td>Heroku</td>
+                    <td>Unmetered</td>
+                    <td>NONE</td>
+                    <td>Ubuntu</td>
+                    <td>10GB</td>
+                    <td>FREE</td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <div>
+            <li> Come up with a domain name that you would like to register for yourself.</li>
+            <input type="text" value="www.wilsonokari.co.ke" disabled>
+        </div>
+
+        <br>
+
+        <div>
+            <li> <b>Describe CSS </b> </li>
+            <textarea  cols="60" rows="8" disabled>
+                CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.
+            </textarea>
+        </div>
+    </ol>
+
+
+</body>
+</html>
